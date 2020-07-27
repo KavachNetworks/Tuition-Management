@@ -1,21 +1,14 @@
 # Security Policy
 
-## Supported Versions
-
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+## Supported Django Versions
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| 3.0.8   | :white_check_mark: |
+| 2.2.x   | :x:                |
 
-## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+## Vulnerability Report
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Refer to this section on why 2.2.x is not being used 
+https://www.cvedetails.com/vulnerability-list/vendor_id-10199/product_id-18211/version_id-303555/Djangoproject-Django-2.2.2.html
