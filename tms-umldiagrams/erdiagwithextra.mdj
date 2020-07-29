@@ -489,6 +489,7 @@
 											"model": {
 												"$ref": "AAAAAAFzjpS31eJCbcU="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 845,
 											"top": 234,
@@ -516,7 +517,7 @@
 									"left": 840,
 									"top": 199,
 									"width": 242.85595703125,
-									"height": 53
+									"height": 38
 								}
 							],
 							"font": "Arial;13;0",
@@ -2114,6 +2115,89 @@
 							"headNameLabel": {
 								"$ref": "AAAAAAFzmMcgw6CMUPM="
 							}
+						},
+						{
+							"_type": "ERDEntityView",
+							"_id": "AAAAAAFzm2KpihfvWeo=",
+							"_parent": {
+								"$ref": "AAAAAAFzjmuUMOCgyt4="
+							},
+							"model": {
+								"$ref": "AAAAAAFzm2KpiRftI5A="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFzm2Kpihfwhrk=",
+									"_parent": {
+										"$ref": "AAAAAAFzm2KpihfvWeo="
+									},
+									"font": "Arial;13;1",
+									"left": 8,
+									"top": 285,
+									"width": 264,
+									"height": 13,
+									"text": "Enrollment"
+								},
+								{
+									"_type": "ERDColumnCompartmentView",
+									"_id": "AAAAAAFzm2KpihfxMMw=",
+									"_parent": {
+										"$ref": "AAAAAAFzm2KpihfvWeo="
+									},
+									"model": {
+										"$ref": "AAAAAAFzm2KpiRftI5A="
+									},
+									"subViews": [
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAFzm2MOlBf9srk=",
+											"_parent": {
+												"$ref": "AAAAAAFzm2KpihfxMMw="
+											},
+											"model": {
+												"$ref": "AAAAAAFzm2MOXBf65+E="
+											},
+											"font": "Arial;13;0",
+											"left": 13,
+											"top": 308,
+											"width": 254,
+											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAFzm2M8zhgEXJk=",
+											"_parent": {
+												"$ref": "AAAAAAFzm2KpihfxMMw="
+											},
+											"model": {
+												"$ref": "AAAAAAFzm2M8lhgBbJs="
+											},
+											"font": "Arial;13;0",
+											"left": 13,
+											"top": 323,
+											"width": 254,
+											"height": 13
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 8,
+									"top": 303,
+									"width": 264,
+									"height": 38
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 8,
+							"top": 280,
+							"width": 264,
+							"height": 184,
+							"nameLabel": {
+								"$ref": "AAAAAAFzm2Kpihfwhrk="
+							},
+							"columnCompartment": {
+								"$ref": "AAAAAAFzm2KpihfxMMw="
+							}
 						}
 					]
 				},
@@ -3110,6 +3194,35 @@
 							"length": 0,
 							"foreignKey": true,
 							"unique": true
+						}
+					]
+				},
+				{
+					"_type": "ERDEntity",
+					"_id": "AAAAAAFzm2KpiRftI5A=",
+					"_parent": {
+						"$ref": "AAAAAAFzjmuUMOCf/eY="
+					},
+					"name": "Enrollment",
+					"columns": [
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAFzm2MOXBf65+E=",
+							"_parent": {
+								"$ref": "AAAAAAFzm2KpiRftI5A="
+							},
+							"name": "enrollment_name",
+							"length": 0,
+							"primaryKey": true
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAFzm2M8lhgBbJs=",
+							"_parent": {
+								"$ref": "AAAAAAFzm2KpiRftI5A="
+							},
+							"name": "subject_id",
+							"length": 0
 						}
 					]
 				}
