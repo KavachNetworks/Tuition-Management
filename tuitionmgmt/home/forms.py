@@ -1,10 +1,16 @@
 from django import forms
-from .models import Subject,Staff,Student
+from .models import Subject,Staff,Student,Enrollment
+
+
+class EnrollmentsAddForm(forms.ModelForm):
+	class Meta:
+		model=Enrollment()
+		fields=['enrollment_name','subject_code']
 
 class SubjectsAddForm(forms.ModelForm):
 	class Meta:
 		model=Subject()
-		fields=['subject_code','subject_name','enrollment_name']
+		fields=['subject_code','subject_name']
 
 
 class StaffsAddForm(forms.ModelForm):
@@ -15,4 +21,4 @@ class StaffsAddForm(forms.ModelForm):
 class StudentsAddForm(forms.ModelForm):
 	class Meta:
 		model=Student()
-		fields=['first_name','last_name','student_ph_no','addr']
+		fields=['first_name','last_name','student_ph_no','addr','enrollment_name']
