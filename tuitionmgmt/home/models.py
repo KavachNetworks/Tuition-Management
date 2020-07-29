@@ -22,5 +22,16 @@ class Staff(models.Model):
 	def __str__(self):
 		return self.first_name+' '+self.last_name
 
+class Student(models.Model):
+	first_name=models.CharField(max_length=250)
+	last_name=models.CharField(max_length=250)
+	student_ph_no=models.CharField(max_length=10)
+	addr=models.TextField()
+	student_uname=models.CharField(max_length=200,blank=True)
+	student_password=models.CharField(max_length=200,blank=True)
+
+	def __str__(self):
+		return self.first_name+' '+self.last_name
+
 
 		
