@@ -15,7 +15,7 @@ class SubjectCreateAdmin(admin.ModelAdmin):
 
 
 class StaffCreateAdmin(admin.ModelAdmin):
-	list_display=['first_name','last_name','staff_ph_no','addr','subject_code']
+	list_display=['first_name','last_name','staff_ph_no','addr','subject_code','staff_date_joined']
 	form=StaffsAddForm
 	list_filter=['subject_code']
 	search_fields=['first_name','last_name']	

@@ -18,6 +18,7 @@ class Staff(models.Model):
 	staff_username=models.CharField(max_length=200,blank=True)
 	staff_password=models.CharField(max_length=200,blank=True)
 	subject_code=models.ForeignKey(Subject,on_delete=models.CASCADE)
+	staff_date_joined=models.DateField()
 
 	def __str__(self):
 		return self.first_name+' '+self.last_name
