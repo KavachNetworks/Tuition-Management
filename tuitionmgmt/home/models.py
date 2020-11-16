@@ -1,5 +1,5 @@
 from django.db import models
-from datetime import datetime
+from django.utils import timezone
 # Create your models here.
 
 class Subject(models.Model):
@@ -24,7 +24,7 @@ class Staff(models.Model):
 	staff_username=models.CharField(max_length=200,blank=True)
 	staff_password=models.CharField(max_length=200,blank=True)
 	subject_code=models.ForeignKey(Subject,on_delete=models.CASCADE)
-	staff_date_joined=models.DateField(default=datetime.now())
+	staff_date_joined=models.DateField(default=timezone.now())
 
 	def __str__(self):
 		return self.first_name+' '+self.last_name
